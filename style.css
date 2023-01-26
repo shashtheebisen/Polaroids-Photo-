@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #2078789f;
+    display: grid;
+    place-items: center;
+}
+
+div{
+    width: 350px;
+    height:460px;
+    padding: 19px 19px 85px 19px;
+    position: relative;
+    background-color: #eaeaea;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+}
+h2{
+    font-family:cursive;
+    font-size: 19px;
+    padding-top: 2vmax;
+    text-align: center;
+    color: #696060;
+}
+
+div:before,
+div:after{
+    content:"";
+    position: absolute;
+    height:50px;
+    width: 180px;
+    background-color: rgba(102,102,102,0.6);
+    transform: rotate(-40deg);
+}
+
+div:before{
+    top: 3px;
+    left: -55px;
+}
+
+div:after{
+    bottom:3px;
+    right: -55px;
+}
